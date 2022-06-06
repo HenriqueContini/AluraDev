@@ -1,0 +1,128 @@
+.header__container {
+    align-items: center;
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    column-gap: 40px;
+}
+
+.search__input {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+    height: 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 5px 20px;
+    color: var(--font-white);
+    font-weight: 400;
+    line-height: 24px;
+    flex-grow: 1;
+}
+
+.search__input:focus {
+    outline: none;
+}
+
+.header__button__div {
+    display: flex;
+    gap: 30px;
+}
+
+.header__button {
+    background-color: var(--bakground);
+    border: none;
+    height: 20px;
+    width: 20px;
+}
+
+.search {
+    background-image: url(../src/icon-lupa.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    background-image: url(../src/icon-menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-icon-x {
+    background-image: url(../src/icon-close.svg);
+}
+
+.header__profile {
+    display: none;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__profile:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    height: 100%;
+    border-radius: 8px;
+}
+
+.img__profile {
+    width: 32px;
+    border-radius: 100%;
+}
+
+.name__profile {
+    color: var(--font-white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+    .header__container {
+        padding: 32px 32px 24px 32px;
+    }
+
+    .search__input {
+        display: block;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1440px) {
+    .header__container {
+        display: grid;
+        grid-template-areas: 
+            "logo search profile";
+        grid-template-columns: 250px 1fr 300px;
+        justify-items: center;
+    }
+
+    .header__logo {
+        grid-area: logo;
+        justify-self: start;
+    }
+
+    .search__input {
+        grid-area: search;
+        justify-self: stretch;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header__profile {
+        display: flex;
+        grid-area: profile;
+        justify-self: end;
+    }
+}

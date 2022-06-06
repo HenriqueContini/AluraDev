@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Dev || Comunidade</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">    
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/card.css">
+</head>
+<body>
+    <header class="header__container">
+        <img src="./src/logo.svg" alt="Logo Alura Dev" class="header__logo">
+        <input type="text" class="search__input" placeholder="Busque por algo">
+        <div class="header__button__div">
+            <button class="header__button search"></button>
+            <button class="header__button menu"></button>
+        </div>
+        <div class="header__profile">
+            <img src="./src/perfil-git.png" alt="Foto perfil" class="img__profile">
+            <p class="name__profile">Henrique</p>
+        </div>
+    </header>
+    <main>
+        <nav class="nav__container">
+            <h2 class="nav__title">Menu</h2>
+            <div class="nav__options">
+                <a href="./index.html" class="nav__link"><img src="./src/icon-editor.svg" class="nav__img"><p>Editor de código</p></a>
+                <a href="./comunidade.html" class="nav__link nav__link--ativo"><img src="./src/icon-comunidade.svg" class="nav__img nav__img--ativo"><p>Comunidade</p></a>
+            </div>
+            <div class="profile__nav">
+                <img src="./src/perfil-git.png" alt="Foto perfil" class="img__profile">
+                <p class="name__profile">Henrique</p>
+            </div>
+        </nav>
+        <section class="cards__container">
+            
+        </section>
+    </main>
+    <script src="./js/nav.js"></script>
+    <script src="./js/loadCard.js"></script>
+</body>
+</html>
