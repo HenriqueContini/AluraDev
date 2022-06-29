@@ -6,7 +6,7 @@ Para acessar o site, <a href="https://henriquecontini.github.io/AluraDev/">cliqu
 Projeto desenvolvido durante o segundo Alura Challenge Front-End. O objetivo era criar um site em que alguém coloca um código, salva, e depois pode visualizar os projetos salvos na aba comunidade, como se fosse um "GitHub".
 
 ### 📘 O que aprendi?
-Com este projeto aprendi a salvar dados no naveegador, manipular o DOM e a utilizar a API do highlight.js.
+Com este projeto aprendi a salvar dados no navegador, manipular o DOM e a utilizar a API do highlight.js.
 
 ### ⚙️ Tecnologias
 Para criar este projeto, eu utilizei as seguintes tecnologias:
